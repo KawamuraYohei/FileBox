@@ -1,0 +1,18 @@
+$ORIGIN example.org.
+$TTL 1D
+
+@    SOA	dns.example.org.	root.example.org.(
+     		  2014072400 ; serial
+		   10800 ;refresh
+		   3600 ;retry
+		   604800 ;expire
+		   86400 ) ;minimum(negative cache)
+
+    IN		   NS	 dns.example.org.
+    IN		   NS	 example.org.
+
+    IN		   A	 192.168.225.157
+    IN		   MX	 5	mx.example.org.
+dns IN		   A	 192.168.225.157
+www IN		   A	 192.168.225.157
+mx  IN		   A	 192.168.225.157
